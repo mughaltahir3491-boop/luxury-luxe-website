@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Luxury Luxe - Premium handmade and imported furniture in the UAE.">
+
+    <title>Luxury Luxe | Premium Furniture UAE</title>
+
+    <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #111;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #444;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: white;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            font-weight: normal;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #777;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .cart {
+            font-size: 20px;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.35),
+                    rgba(0,0,0,0.35)
+                ),
+                linear-gradient(
+                    135deg,
+                    #d8d0c5,
+                    #8d8175
+                );
+
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero small {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 13px;
+        }
+
+        .hero h1 {
+            font-size: 62px;
+            line-height: 1.1;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 550px;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            background: white;
+            color: #111;
+        }
+
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        .section {
+            padding: 90px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-heading small {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #777;
+        }
+
+        .section-heading h2 {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+
+
+        /* =========================
+           CATEGORIES
+        ========================= */
+
+        .categories {
+            display: grid;
+            grid-template-columns:
+                repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .category {
+            height: 300px;
+            padding: 30px;
+            display: flex;
+            align-items: end;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.15),
+                    rgba(0,0,0,0.6)
+                ),
+                linear-gradient(
+                    135deg,
+                    #ddd,
+                    #777
+                );
+
+            transition: 0.4s;
+        }
+
+        .category:hover {
+            transform: translateY(-8px);
+        }
+
+        .category h3 {
+            font-size: 25px;
+        }
+
+
+        /* =========================
+           PRODUCTS
+        ========================= */
+
+        .products {
+            display: grid;
+            grid-template-columns:
+                repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            border: 1px solid #eee;
+            background: white;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .product-image {
+            height: 280px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eee,
+                    #c8c0b8
+                );
+
+            font-size: 60px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-info .btn {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: #f6f4f1;
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns:
+                1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-image {
+            height: 500px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #cfc5ba,
+                    #8c8177
+                );
+
+            color: white;
+            font-size: 70px;
+        }
+
+        .about-text small {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #777;
+        }
+
+        .about-text h2 {
+            font-size: 42px;
+            margin: 15px 0 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        .features {
+            display: grid;
+            grid-template-columns:
+                repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .feature {
+            padding: 30px 20px;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            padding: 100px 20px;
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #222,
+                    #555
+                );
+
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .cta .btn {
+            background: white;
+            color: #111;
+        }
+
+
+        /* =========================
+           NEWSLETTER
+        ========================= */
+
+        .newsletter {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .newsletter h2 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .newsletter p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .newsletter form {
+            display: flex;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .newsletter input {
+            flex: 1;
+            padding: 14px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        .newsletter button {
+            border: none;
+            padding: 14px 25px;
+            background: #111;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #111;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns:
+                2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 10px;
+            color: #bbb;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .copyright {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .categories,
+            .products,
+            .features {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .header-container {
+                height: 70px;
+            }
+
+            .logo {
+                font-size: 21px;
+            }
+
+            .hero {
+                min-height: 550px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-heading h2 {
+                font-size: 32px;
+            }
+
+            .categories,
+            .products,
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .about-text h2 {
+                font-size: 32px;
+            }
+
+            .cta h2 {
+                font-size: 32px;
+            }
+
+            .newsletter form {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="container header-container">
+
+            <a href="#" class="logo">
+                LUXURY <span>LUXE</span>
+            </a>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#categories">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="#products">Collections</a>
+                    </li>
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <span>🔍</span>
+
+                <span class="cart">
+                    🛒
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <small>
+                        Premium Furniture UAE
+                    </small>
+
+                    <h1>
+                        Elevating Spaces,
+                        Defining Elegance.
+                    </h1>
+
+                    <p>
+                        Discover premium handmade and imported
+                        furniture designed to transform your home
+                        into a space you'll love.
+                    </p>
+
+                    <a href="#products" class="btn">
+                        Explore Collection
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CATEGORIES -->
+
+        <section class="section" id="categories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <small>
+                        Explore Our Collection
+                    </small>
+
+                    <h2>
+                        Shop By Category
+                    </h2>
+
+                </div>
+
+
+                <div class="categories">
+
+
+                    <a href="#" class="category">
+
+                        <div>
+                            <h3>Sofas</h3>
+                            <p>Discover Collection →</p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="#" class="category">
+
+                        <div>
+                            <h3>Beds</h3>
+                            <p>Discover Collection →</p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="#" class="category">
+
+                        <div>
+                            <h3>Sofa Beds</h3>
+                            <p>Discover Collection →</p>
+                        </div>
+
+                    </a>
+
+
+                    <a href="#" class="category">
+
+                        <div>
+                            <h3>Tables</h3>
+                            <p>Discover Collection →</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PRODUCTS -->
+
+        <section class="section"
+                 id="products"
+                 style="background:#f8f8f8;">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <small>
+                        Our Best Sellers
+                    </small>
+
+                    <h2>
+                        Featured Furniture
+                    </h2>
+
+                </div>
+
+
+                <div class="products">
+
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+                            🛋️
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>
+                                Cloud Modular Sofa
+                            </h3>
+
+                            <p>
+                                Premium modern comfort.
+                            </p>
+
+                            <div class="price">
+                                AED 3,999
+                            </div>
+
+                            <a href="#" class="btn">
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+                            🛋️
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>
+                                Luxury Sectional Sofa
+                            </h3>
+
+                            <p>
+                                Elegant design for modern homes.
+                            </p>
+
+                            <div class="price">
+                                AED 4,999
+                            </div>
+
+                            <a href="#" class="btn">
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+                            🛏️
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>
+                                Premium Upholstered Bed
+                            </h3>
+
+                            <p>
+                                Modern luxury for your bedroom.
+                            </p>
+
+                            <div class="price">
+                                AED 2,499
+                            </div>
+
+                            <a href="#" class="btn">
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+                            🪑
+                        </div>
+
+                        <div class="product-info">
+
+                            <h3>
+                                Modern Coffee Table
+                            </h3>
+
+                            <p>
+                                Minimal design with elegance.
+                            </p>
+
+                            <div class="price">
+                                AED 699
+                            </div>
+
+                            <a href="#" class="btn">
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT -->
+
+        <section class="section about"
+                 id="about">
+
+            <div class="container about-container">
+
+
+                <div class="about-image">
+                    LUXE
+                </div>
+
+
+                <div class="about-text">
+
+                    <small>
+                        About Luxury Luxe
+                    </small>
+
+                    <h2>
+                        Furniture Made
+                        For Your Lifestyle.
+                    </h2>
+
+                    <p>
+                        At Luxury Luxe, we believe furniture
+                        should be more than functional. It should
+                        define your space and reflect your style.
+                    </p>
+
+                    <p>
+                        Our collection combines modern design,
+                        premium materials and carefully crafted
+                        furniture to create beautiful living spaces.
+                    </p>
+
+                    <a href="#contact" class="btn">
+                        Discover Our Story
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FEATURES -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <small>
+                        The Luxury Luxe Difference
+                    </small>
+
+                    <h2>
+                        Why Choose Us?
+                    </h2>
+
+                </div>
+
+
+                <div class="features">
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✨
+                        </div>
+
+                        <h3>
+                            Premium Quality
+                        </h3>
+
+                        <p>
+                            Carefully selected materials
+                            and quality craftsmanship.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            🛠️
+                        </div>
+
+                        <h3>
+                            Made To Order
+                        </h3>
+
+                        <p>
+                            Furniture crafted according
+                            to your selected specifications.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            🚚
+                        </div>
+
+                        <h3>
+                            UAE Delivery
+                        </h3>
+
+                        <p>
+                            Convenient furniture delivery
+                            across the UAE.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ❤️
+                        </div>
+
+                        <h3>
+                            Customer First
+                        </h3>
+
+                        <p>
+                            We're committed to creating
+                            an excellent shopping experience.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+                    Create A Home You Love.
+                </h2>
+
+                <p>
+                    Explore premium furniture designed
+                    for modern UAE homes.
+                </p>
+
+                <a href="#products" class="btn">
+                    Shop Furniture
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- NEWSLETTER -->
+
+        <section class="newsletter">
+
+            <div class="container">
+
+                <h2>
+                    Stay In The Loop
+                </h2>
+
+                <p>
+                    Subscribe for new collections,
+                    offers and furniture inspiration.
+                </p>
+
+                <form>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer id="contact">
+
+        <div class="container">
+
+
+            <div class="footer-grid">
+
+
+                <div>
+
+                    <h3>
+                        LUXURY LUXE
+                    </h3>
+
+                    <p>
+                        Affordable Furniture for Luxury.
+                    </p>
+
+                    <p style="margin-top:15px;">
+                        Premium handmade and imported
+                        furniture for modern living.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Shop
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                Sofas
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Beds
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Sofa Beds
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Tables
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Company
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="#about">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Contact
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            UAE
+                        </li>
+
+                        <li>
+                            +971 55 431 6631
+                        </li>
+
+                        <li>
+                            info@luxuryluxe.ae
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="copyright">
+
+                © 2026 Luxury Luxe.
+                All Rights Reserved.
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
